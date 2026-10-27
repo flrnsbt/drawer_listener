@@ -20,11 +20,7 @@ import 'package:material_ui/material_ui.dart';
 /// ```
 class DrawerStateObserver extends StatefulWidget {
   /// Creates a widget that listens to drawer state changes.
-  const DrawerStateObserver({
-    super.key,
-    this.child,
-    required this.builder,
-  });
+  const DrawerStateObserver({super.key, this.child, required this.builder});
 
   /// The child widget that will be passed to the builder.
   ///

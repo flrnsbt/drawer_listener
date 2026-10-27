@@ -1,6 +1,9 @@
 name: drawer_state_observer
 description: "A hacky solution to detect Scaffold drawer open state for cases where you cannot customize the Scaffold/Drawer implementation. WARNING: Prefer customizing your Scaffold with onDrawerChanged/onEndDrawerChanged callbacks instead of using this package."
 version: 0.0.1
+repository: https://github.com/flrnsbt/drawer_listener
+homepage: https://pub.dev/packages/drawer_state_observer
+documentation: https://raw.githubusercontent.com/flrnsbt/drawer_listener/refs/heads/main/README.md
 
 environment:
   sdk: ^3.13.7

@@ -100,31 +100,17 @@ class _ProperApproachBody extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
-            Icons.check_circle,
-            color: Colors.green,
-            size: 64,
-          ),
+          const Icon(Icons.check_circle, color: Colors.green, size: 64),
           const SizedBox(height: 16),
           Text(
             '✓ Recommended Approach',
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold,
-                ),
+            style: Theme.of(context).textTheme.headlineSmall
+                ?.copyWith(color: Colors.green, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 32),
-          _buildStatusCard(
-            'Main Drawer',
-            isDrawerOpen,
-            Colors.green,
-          ),
+          _buildStatusCard('Main Drawer', isDrawerOpen, Colors.green),
           const SizedBox(height: 16),
-          _buildStatusCard(
-            'End Drawer',
-            isEndDrawerOpen,
-            Colors.orange,
-          ),
+          _buildStatusCard('End Drawer', isEndDrawerOpen, Colors.orange),
           const SizedBox(height: 32),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 32),
@@ -146,10 +132,7 @@ class _ProperApproachBody extends StatelessWidget {
       decoration: BoxDecoration(
         color: isOpen ? color.withValues(alpha: 0.2) : Colors.grey.shade200,
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(
-          color: isOpen ? color : Colors.grey,
-          width: 2,
-        ),
+        border: Border.all(color: isOpen ? color : Colors.grey, width: 2),
       ),
       child: Text(
         '$title: ${isOpen ? "OPEN" : "CLOSED"}',

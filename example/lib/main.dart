@@ -1,4 +1,5 @@
 import 'package:material_ui/material_ui.dart';
+
 import 'widget_example.dart';
 import 'stream_example.dart';
 import 'proper_approach_example.dart';
@@ -45,9 +46,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const WidgetExample(),
-                ),
+                MaterialPageRoute(builder: (context) => const WidgetExample()),
               );
             },
           ),
@@ -61,9 +60,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const StreamExample(),
-                ),
+                MaterialPageRoute(builder: (context) => const StreamExample()),
               );
             },
           ),
@@ -152,16 +149,14 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      style: Theme.of(context).textTheme.titleLarge
+                          ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       description,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: Colors.grey.shade600,
-                          ),
+                      style: Theme.of(context).textTheme.bodyMedium
+                          ?.copyWith(color: Colors.grey.shade600),
                     ),
                   ],
                 ),
