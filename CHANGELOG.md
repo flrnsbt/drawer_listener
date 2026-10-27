@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Added warning to README about using `material_ui` package instead of the SDK-embedded `material` package
+
 ## 0.0.2
 
 * Updated README.md file

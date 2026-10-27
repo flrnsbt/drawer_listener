@@ -2,6 +2,8 @@
 
 A hacky solution to detect Scaffold drawer open state for cases where you cannot customize the Scaffold/Drawer implementation.
 
+> **⚠️ Note:** This package is designed to work with the [`material_ui`](https://pub.dev/packages/material_ui) package, **not** with the `material` package embedded in the Flutter SDK. The `material_ui` package is the newly preferred Material UI implementation, while the SDK-embedded `material` package will be deprecated and removed in the future. Make sure you correctly use `material_ui` in your dependencies before using this package.
+
 ## ⚠️ IMPORTANT WARNING
 
 **This package is NOT recommended for general use.** It's a workaround for specific scenarios where you cannot modify the Scaffold widget directly.
