@@ -142,6 +142,7 @@ This package uses a workaround by:
 4. Broadcasting these changes via streams or rebuilding widgets
 
 This is "hacky" because:
+
 - It relies on internal implementation details of Scaffold
 - It polls on geometry changes rather than using proper callbacks
 - It may have performance implications due to listening to all geometry changes
@@ -160,6 +161,7 @@ This is "hacky" because:
 ### When to Use This Package
 
 Use this package only when:
+
 - You cannot modify the Scaffold widget (e.g., third-party library)
 - You need to detect drawer state from a descendant widget
 - You're working with legacy code that cannot be refactored
@@ -167,14 +169,11 @@ Use this package only when:
 ### When NOT to Use This Package
 
 Do NOT use this package when:
+
 - You have control over the Scaffold widget - use `onDrawerChanged`/`onEndDrawerChanged` instead
 - You're building new code - design it properly from the start
 - Performance is critical - this has overhead from geometry listening
 
-## Contributing
-
-This is a workaround package. The best contribution is to avoid using it and use Flutter's proper APIs instead. If you must use it, please report issues with details about your specific use case.
-
 ## License
 
-See LICENSE file for details.
+See the [LICENSE](LICENSE) file for details
